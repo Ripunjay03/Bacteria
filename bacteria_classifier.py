@@ -52,6 +52,6 @@ history = model.fit(
 )
 
 # Save model and class indices
-model.save('bacteria_model.h5')
+model.save('bacteria_model.keras')
 np.save('class_indices.npy', train_generator.class_indices)
 print('Model and class indices saved.')

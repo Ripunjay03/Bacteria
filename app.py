@@ -6,7 +6,7 @@ import io
 
 # Load model and class indices
 def load_classifier():
-    model = load_model('bacteria_model.h5')
+    model = load_model('bacteria_model.keras')
     class_indices = np.load('class_indices.npy', allow_pickle=True).item()
     idx_to_class = {v: k for k, v in class_indices.items()}
     return model, idx_to_class
